@@ -3,7 +3,7 @@
 <img width="1156" alt="image" src="https://github.com/user-attachments/assets/00acd6fc-0c5c-4e93-a39b-1a7c475f82a8" />
 
 LLM agent-based dream analysis system.
-Example of what a mentor would make in https://systemshacks.com.
+Quick example of what a mentor would target in https://systemshacks.com.
 
 System Prompt:
 ```

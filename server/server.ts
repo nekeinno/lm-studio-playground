@@ -3,10 +3,14 @@ import { LMStudioClient } from "@lmstudio/sdk";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-export const AVAIALBLE_MODELS = new Set(["gemma-3-12b-it"]);
+export const getAvailableModels = async () => {
+  const client = new LMStudioClient();
+  const loadedModels = await client.llm.listLoaded();
+  return loadedModels.map(model => model.modelKey);
+};
 
 export async function processPrompt(prompt: string, modelName: string) {
-  if (!AVAIALBLE_MODELS.has(modelName)) {
+  if (!((await getAvailableModels()).includes(modelName))) {
     throw new Error("Invalid model");
   }
 
@@ -129,8 +133,8 @@ app.post("/api", async (req: Request, res: Response) => {
   res.status(400).json({ error: "Invalid query" });
 });
 
-app.get("/models", (_: Request, res: Response) => {
-    res.json({ models: [...AVAIALBLE_MODELS] });
+app.get("/models", async (_: Request, res: Response) => {
+    res.json({ models: [...await getAvailableModels()] });
 });
 
 app.use((_: Request, res: Response) => {

@@ -1,4 +1,4 @@
-# Dream LLM analysis via LM Studio API
+# On-device dream LLM analysis
 
 <img width="1156" alt="image" src="https://github.com/user-attachments/assets/00acd6fc-0c5c-4e93-a39b-1a7c475f82a8" />
 

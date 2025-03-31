@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <h1>Dream Analysis via LM Studio API</h1>
+      <h1>On-device Dream Analysis via LM Studio</h1>
       <div className="card">
         <div style={{ width: "50rem", display: "flex", flexDirection: "column" }}>
           <textarea

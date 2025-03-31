@@ -1,6 +1,6 @@
 # On-device dream LLM analysis
 
-<img width="1156" alt="image" src="https://github.com/user-attachments/assets/00acd6fc-0c5c-4e93-a39b-1a7c475f82a8" />
+<img width="1021" alt="image" src="https://github.com/user-attachments/assets/d26764a7-ff1f-4388-b025-86303416aee8" />
 
 LLM agent-based dream analysis system.
 Quick example of what a mentor would target in https://systemshacks.com.
